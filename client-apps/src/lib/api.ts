@@ -33,7 +33,7 @@ const callAPI = async (
    let session = await getSession();
    let accessToken = session?.user?.accessToken;
 
-   if (!idToken) {
+   if (!accessToken) {
       throw new Error(
          "No ID token available. User might not be authenticated."
       );
