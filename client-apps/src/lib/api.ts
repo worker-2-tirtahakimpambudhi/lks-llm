@@ -31,7 +31,7 @@ const callAPI = async (
    retryCount = 0
 ) => {
    let session = await getSession();
-   let idToken = session?.user?.idToken;
+   let accessToken = session?.user?.accessToken;
 
    if (!idToken) {
       throw new Error(
@@ -41,7 +41,7 @@ const callAPI = async (
 
    const defaultHeaders = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${idToken}`,
+      Authorization: `Bearer ${accessToken}`,
    };
 
    const fetchOptions: RequestInit = {
