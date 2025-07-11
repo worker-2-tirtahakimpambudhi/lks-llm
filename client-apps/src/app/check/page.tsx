@@ -28,7 +28,7 @@ const Dashboard = () => {
          url: "/us-east-1/embed",
          method: "POST",
          body: {
-            model: "nomic-embed-text",
+            model: "orca-mini",
             input: "Why is the sky blue?",
          },
       },
@@ -42,7 +42,7 @@ const Dashboard = () => {
          url: "/us-west-2/embed",
          method: "POST",
          body: {
-            model: "nomic-embed-text",
+            model: "orca-mini",
             input: "Why is the sky blue?",
          },
       },
