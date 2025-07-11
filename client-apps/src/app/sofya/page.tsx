@@ -25,8 +25,8 @@ const ChatLayout = () => {
    const [isRightDrawerOpen, setIsRightDrawerOpen] = useState(false);
 
    const [settingsData, setSettingsData] = useState<SettingsTypes>({
-      llmModel: "orca-mini",
-      embedModel: "nomic-embed-text",
+      llmModel: "orca-mini:3b",
+      embedModel: "orca-mini:3b",
       region: "us-east-1",
       name: userData?.name,
    });
